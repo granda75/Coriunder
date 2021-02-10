@@ -2,8 +2,7 @@
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-<%--<body>
-    <form id="form1" runat="server">--%>
+
         <div id="paymentsId">
             <div class="container">
                 <div class="row">
@@ -29,7 +28,7 @@
                         Card Number: *
                     </div>
                     <div class="col-md-12">
-                        <input id="txtEmail" type="text" />
+                        <input id="txtCardNumber" type="text" />
                     </div>
                 </div>
                 <div class="row">
@@ -70,7 +69,7 @@
                      </div>
                      <div class="col-md-12">
                         
-                         <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                         <asp:DropDownList ID="ddlCountry" runat="server"></asp:DropDownList>
                      </div>
                     
                 </div>
@@ -79,7 +78,8 @@
                         Phone Number: *
                     </div>
                     <div class="col-md-12">
-                        <input id="txtPhone" type="text" />
+                        <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
+                        
                     </div>
                 </div>
                 <div class="row">

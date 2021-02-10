@@ -187,6 +187,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\TransactionsData.cs" />
+    <Compile Include="Models\TransactionType.cs" />
+    <Compile Include="Models\TypeCredit.cs" />
     <Compile Include="PaymentDetails.aspx.cs">
       <DependentUpon>PaymentDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -195,6 +198,7 @@
       <DependentUpon>PaymentDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signature.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

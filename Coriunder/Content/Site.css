@@ -11,9 +11,15 @@
 
 #paymentsId
 {
-    width: 500px;
+    width: 470px;
     margin: 0 auto;
     border: solid 1px;
+    padding: 10px;
+}
+
+.row {
+   /* margin-top: 30px;*/
+    margin-bottom: 15px
 }
 
 /* Move down content because we have a fixed navbar that is 50px tall */

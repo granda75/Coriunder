@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Text;
+
 namespace Coriunder
 { 
     public class Signature
@@ -9,9 +12,13 @@ namespace Coriunder
             byte[] hashValue = sh.ComputeHash(System.Text.Encoding.UTF8.GetBytes(value));
             return System.Convert.ToBase64String(hashValue);
         }
+
+        public static string EncodeTo64(string toEncode)
+        {
+            byte[] toEncodeAsBytes = ASCIIEncoding.ASCII.GetBytes(toEncode);
+            string returnValue = Convert.ToBase64String(toEncodeAsBytes);
+            return returnValue;
+        }
     }
 }
-//Usage Example
-//string sSignature = Signature.GenerateSHA256("1234567ABCDEFGHIJ"); 
-//{
-//}
+   

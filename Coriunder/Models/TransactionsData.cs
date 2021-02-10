@@ -25,11 +25,17 @@ namespace Coriunder.Models
            
         public string ZipCode { get; set; }
 
-        public int CountryCode { get; set; }    
+        public string CountryCode { get; set; }    
 
         public string Phone { get; set; }
 
         public decimal Amount { get; set; }
-           
+
+        public string Currency { get; set; }
+
+        public string PersonalHashKey { get; set; }
+
+        public string CompanyNumber { get; set; }
+
     }
 }
